@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 `;
 
 const CardBody = styled.main`
-  padding: 30px;
+  padding: 20px;
 `
 
 export default function App() {
@@ -28,7 +28,6 @@ export default function App() {
           <Info />
           <Button />
           <Bio />
-          <SocialMedia />
         </CardBody>
       </Card>
     </Wrapper>
