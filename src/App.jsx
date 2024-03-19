@@ -5,7 +5,7 @@ import FeaturedImage from "./components/card/FeaturedImage";
 import Info from "./components/card/Info";
 import Button from './components/card/Button';
 import Bio from './components/card/Bio';
-import SocilaMedia from './components/card/SocilaMedia';
+import SocialMedia from './components/card/SocialMedia';
 
 const Wrapper = styled.div`
   display: flex;
@@ -14,16 +14,22 @@ const Wrapper = styled.div`
   height: 100%;
 `;
 
+const CardBody = styled.main`
+  padding: 30px;
+`
+
 export default function App() {
 
   return (
     <Wrapper>
       <Card>
         <FeaturedImage />
-        <Info />
-        <Button />
-        <Bio />
-        <SocilaMedia />
+        <CardBody>
+          <Info />
+          <Button />
+          <Bio />
+          <SocialMedia />
+        </CardBody>
       </Card>
     </Wrapper>
   )

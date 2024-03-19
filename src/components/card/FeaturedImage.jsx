@@ -1,15 +1,20 @@
 import styled from 'styled-components';
+import ProfileImage from '../../assets/profile_pic.png';
 
 
-const H1 = styled.h1`
-  font-size: 46px;
-  color: purple;
-`
+const MediaWrapper = styled.div`
+  width: 100%;
+`;
+
+const Media = styled.img`
+  width: 100%;
+  height: 100%;
+`;
 
 export default function FeaturedImage() {
   return (
-    <div>
-      <H1>The Sanhedrein</H1>
-    </div>
+    <MediaWrapper>
+      <Media src={ProfileImage} alt="Profile Image" />
+    </MediaWrapper>
   )
 }
